@@ -9,6 +9,31 @@ body{
     width: 100%;
 }
 
+/* to top*/
+#to-top{
+    display: none;
+}
+#to-top.active{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #fff;
+    padding: 25px;
+    z-index: 9999;
+    cursor: pointer;
+}
+#to-top.active:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+
 /*Navigation*/
 
 header{
@@ -18,6 +43,13 @@ header{
     justify-content: space-between;
     padding: 10px 30px;
     position: fixed;
+}
+
+header.active{
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
 }
 
 nav{
@@ -39,6 +71,10 @@ transition: 0.05s ease-in-out;
 .btn:hover{
     color: #000;
     background-color: #fff;
+}
+
+header.active nav ul a{
+    color: #000;
 }
 
 nav ul{
