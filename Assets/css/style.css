@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+/*Navigation*/
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    position: fixed;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.btn{
+text-decoration: none;
+color: #fff;
+background: #000;
+padding: 10px 20px;
+border-radius: 5px;
+transition: 0.05s ease-in-out;
+}
+
+.btn:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 5px 5px;
+    transition: 0.1s ease-in-out;
+}
+
+nav ul a:hover{
+    border-bottom: 2px #ffffff solid;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+footer .items{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 35ch;
+}
+
+.footer-col li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-col a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-links{
+    display: flex;
+    gap: 15px;
+}
+
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff94;
+    border-radius: 50%;
+    font-size: 1.15em;
+}
+
+.social-link:hover{
+    background-color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.fa-facebook{
+    color: #1877F2;
+}
+.fa-x-twitter{
+    color: #000;
+}
+.fa-instagram{
+    background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.f-headings{
+    border-bottom: #b10000 2px solid;
+    padding-bottom: 10px;
+}
+
+.subscribe{
+    display: flex;
+    gap: 5px;
+}
+
+.subscribe input{
+    background-color: transparent;
+    border: 1px solid #b10000;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.subscribe .submit-btn{
+    color: #fff;
+    background-color: #b10000;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.subscribe input::placeholder{
+    color: #a1a1a1;
+    font-size: 1.2em;
+}
+
+
+/*main*/
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 7em;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+/*Hero*/
+.Hero{
+    background-image: url(/Assets/images/couple-getting-ready-move-with-their-daughter.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #918f8f;
+}
+
+.Hero .contents{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    display: flex;
+    padding: 100px;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.Hero .contents p{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.cta-btns{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+    height: 2px;
+    width: 2px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+}
+
+::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+}
