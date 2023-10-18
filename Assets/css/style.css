@@ -340,6 +340,7 @@ p{
     box-shadow:  10px 10px 30px #e6e6e6,
                 -10px -10px 30px #ffffff;
 }
+
 .card i{
     font-size: 3em;
 }
@@ -348,8 +349,84 @@ p{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: all ease-in-out 0.6s;
+}
+.card:hover i, .card:hover h3{
+    background-image: linear-gradient(to bottom right, #b10000, #2b0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
+/* Quotations page*/
+.quotations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Assets/images/interracial-couple-getting-ready.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #918f8f;
+}
+.quotations .contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 30px;
+    width: 100%;
+}
+
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: clamp(35em, 90%, 40em);
+    background: rgba( 0, 8, 21, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.quotation-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quotation-form input{
+    background-color: transparent;
+    border: 2px #a5a5a5 solid;
+    border-radius: 5px;
+    width: clamp(25em, 90%, 30em);
+    height: 3em;
+    padding: 5px;
+}
+.quotation-form input::-webkit-input-placeholder{
+    color: #a5a5a5;
+}
+.quotation-form input.btn{
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.05s ease-in-out;
+    border: none;
+}
+.quotation-form input.btn:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+}
 
 
 
@@ -515,7 +592,7 @@ p{
         top: 0;
         left: 100%;
         background-color: #fff;
-        z-index: 0;
+        z-index: 9998;
         transition: all ease-in-out 0.5s;
     }
 
