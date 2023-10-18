@@ -30,8 +30,26 @@
             </ul>
             <a href="#" class="btn">Booking</a>
         </nav>
+        <button id="menuToggle" class="hamburger">
+            <!--
+            A fake / hidden checkbox is used as click receiver,
+            so you can use the :checked selector on it.
+            -->
+            <input onclick="menu()" id="menu-btn" type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+        </button>
     </header>
-    <div class="mobile-nav">
+    <div id="mobile-nav" class="mobile-nav">
         <div class="logo">
             <span>EMC</span>
         </div>
@@ -61,7 +79,7 @@
                 <p>No more moving related headaches, leave it all to us</p>
                 <div class="cta-btns">
                     <a href="#" class="btn">Learn More</a>
-                    <a href="#" class="btn">Book Now</a>
+                    <a href="#" class="btn cta">Book Now</a>
                 </div>
             </div>
         </section>

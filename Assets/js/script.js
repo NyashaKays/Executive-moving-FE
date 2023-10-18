@@ -16,5 +16,12 @@ window.onload = function(){
             left: 0,
             behavior: 'smooth'
         });
+    });
+
+    const menu_btn = document.getElementById('menuToggle');
+    const menu = document.getElementById('mobile-nav')
+
+    menu_btn.addEventListener("click", function(){
+        menu.classList.toggle('active')
     })
 }
