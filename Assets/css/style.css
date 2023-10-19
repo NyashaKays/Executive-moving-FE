@@ -41,7 +41,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 2px 10px;
     position: fixed;
     z-index: 9999;
 }
@@ -76,6 +76,14 @@ transition: 0.05s ease-in-out;
 
 header.active nav ul a{
     color: #000;
+}
+
+.logo{
+    width: 4rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul{
@@ -238,7 +246,7 @@ h3{
 }
 p{
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 /*Hero*/
@@ -252,7 +260,12 @@ p{
 
 .Hero .contents{
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
+    background: rgba( 0, 8, 21, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     color: #fff;
     display: flex;
     padding: 100px 30px;
@@ -404,14 +417,57 @@ p{
 
 .quotation-form input{
     background-color: transparent;
-    border: 2px #a5a5a5 solid;
+    border: 2px #e6e4e4 solid;
     border-radius: 5px;
     width: clamp(25em, 90%, 30em);
     height: 3em;
     padding: 5px;
 }
+.quotation-form label{
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.quotation-form input:hover{
+    background-color: #7d7d7d33;
+}
 .quotation-form input::-webkit-input-placeholder{
-    color: #a5a5a5;
+    color: #e6e4e4;
+}
+.quotation-form textarea{
+    background-color: transparent;
+    border: 2px #e6e4e4 solid;
+    border-radius: 5px;
+    width: clamp(25em, 90%, 30em);
+}
+.quotation-form textarea:hover{
+    background-color: #7d7d7d33;
+}
+.quotation-form textarea::-webkit-input-placeholder{
+    -webkit-text-fill-color: #e6e4e4;
+}
+.bookings .contents .form-container .quotation-form input::-webkit-input-placeholder{
+    -webkit-text-fill-color: #000;
+}
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus{
+    border: 2px solid #1a1a1a;
+    -webkit-text-fill-color: #1a1a1a;
+    background-color: #c5c5c5de;
+    transition: background-color 5000s ease-in-out 0s;
+}
+input:focus,
+input:active{
+    -webkit-text-fill-color: #fff;
+    box-shadow: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus{
+    border: 2px solid #1a1a1a;
+    -webkit-text-fill-color: #1a1a1a;
+    background-color: #c5c5c5de;
+    transition: background-color 5000s ease-in-out 0s;
 }
 .quotation-form input.btn{
     text-decoration: none;
@@ -428,6 +484,49 @@ p{
     background-color: #fff;
 }
 
+/*contact page*/
+.contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Assets/images/couple.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #918f8f;
+}
+
+.contact-us .contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 30px;
+    width: 100%;
+}
+
+/*booking page*/
+.bookings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Assets/images/african-american-man-getting-ready-his-new-home-move.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #918f8f;
+}
+
+.bookings .contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 30px;
+    width: 100%;
+}
 
 
 

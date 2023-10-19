@@ -11,7 +11,7 @@ Stock images from https://freepik.com-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Assets/css/style.css">
     <script type="text/javascript" src="Assets/js/script.js"></script>
-    <title>Executive Moving Carriers | Home</title>
+    <title>Executive Moving Carriers | Booking</title>
 </head>
 <body>
     <div id="to-top">
@@ -4245,14 +4245,16 @@ Stock images from https://freepik.com-->
         </a>
         <nav>
             <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
                 <a href="quotation.html">
                     <li>Quotation</li>
                 </a>
                 <a href="contact.html">
-                    <li>Contact Us</li>
+                    <li>Contact us</li>
                 </a>
             </ul>
-            <a href="booking.html" class="btn">Booking</a>
         </nav>
         <button id="menuToggle" class="hamburger">
             <!--
@@ -4275,107 +4277,40 @@ Stock images from https://freepik.com-->
     </header>
     <div id="mobile-nav" class="mobile-nav">
         <ul>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
             <a href="quotation.html">
                 <li>Quotation</li>
             </a>
             <a href="contact.html">
-                <li>Contact Us</li>
+                <li>Contact us</li>
             </a>
         </ul>
-        <a href="#" class="btn">Booking</a>
     </div>
 
 
-
-
     <main>
-        <section class="Hero">
+        <section class="bookings">
             <div class="contents">
-                <h1>
-                    Stress Free Moving Days
-                </h1>
-                <p>No more moving related headaches, leave it all to us</p>
-                <div class="cta-btns">
-                    <a href="#About-us" class="btn">Learn More</a>
-                    <a href="quotation.html" class="btn cta">Get a Quote</a>
-                </div>
-            </div>
-        </section>
+                <h2>Book Now</h2>
+                <p>Fill in the form below and enter the ID given on your quotation</p>
+                <div class="form-container">
+                    <form class="quotation-form" action="">
+                        <label for="name">Name</label>
+                        <input name="name" type="text" placeholder="John Doe" required>
+                        
+                        <label for="quote">Quote ID</label>
+                        <input type="text" name="quote" id="quote" placeholder="Quote ID">
 
-        <section id="About-us" class="About-us">
-            <div class="contents">
-                <div id="about" class="about">
-                    <h2>
-                        About Us
-                    </h2>
-                    <p>
-                        welcome to Executive Moving carriers, your trusted partner for all your moving needs. <br>
-                        At Executive Moving carriers, we understand that moving can be a daunting and overwhelming task.
-                        That's why we are here to make your moving experience smooth, efficient, and stress-free. With 
-                        vast experience in the industry, we have perfected the art of relocation, catering for both
-                        residential and commercial clients. 
-                    </p>
-                    <h2>
-                        <br>
-                        Our Mission
-                    </h2>
-                    <p>
-                        At Executive Moving Carriers, our mission is to revolutionize the moving experience by providing seamless, 
-                        reliable, and personalized solutions that exceed our clients' expectations.
-                        <br><br>
-                        We are committed to relieving the stress and anxiety often associated with moving by offering a 
-                        comprehensive range of services designed to simplify the relocation process. From the moment you 
-                        reach out to us, our dedicated team is focused on understanding your unique needs and tailoring 
-                        our services to meet them.
-                        <br><br>
-                        We aim to be the trusted partner you can rely on during one of life's most significant transitions. 
-                        Our mission is to ensure that every client feels supported, informed, and confident throughout their 
-                        entire moving journey.
-                    </p>
-                </div>
-                <div class="values">
-                    <h2 id="values">Our values</h2>
-                    <div class="card-container">
-                        <div class="card">
-                            <i class="fa-solid fa-user-shield"></i>
-                        <h3>Reliability</h3>
-                        <p>
-                            We understand that moving is a significant event in your life,
-                            and we are committed to being a reliable and trustworthy partner
-                            throughout the process. You can count on us to be punctual responsive,
-                            and deliver on our promises.
-                        </p>
-                        </div>
-                        <div class="card">
-                            <i class="fa-solid fa-handshake"></i>
-                        <h3>integrity</h3>
-                        <p>
-                            Honesty and transparency are at the heart of our business. We believe 
-                            in conducting ourselves with the utmost integrity, treating our clients 
-                            and their belongings with respect and ensuring open and clear communication.
-                        </p>
-                        </div>
-                        <div class="card">
-                            <i class="fa-solid fa-star"></i>
-                        <h3>Excellence</h3>
-                        <p>
-                            We strive for excellence in every aspect of our work. From the professionalism 
-                            of our team members to the quality of our services, we are dedicated to 
-                            achieving the highest standards. We continually seek opportunities for 
-                            improvement and innovation to exceed our clients' expectations.
-                        </p>
-                        </div>
-                        <div class="card">
-                            <i class="fa-solid fa-people-group"></i>
-                        <h3>Teamwork</h3>
-                        <p>
-                            We believe in the power of collaboration. Our team members work together seamlessly, 
-                            leveraging their diverse skills and expertise to deliver exceptional results. We foster 
-                            a supportive and inclusive environment that values and respects each individual's 
-                            contributions
-                        </p>
-                        </div>
-                    </div>
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date">
+
+                        <label for="time">Pick-up Time</label>
+                        <input type="time" name="time" id="time">
+
+                        <input type="submit" value="Submit" class="btn">
+                    </form>
                 </div>
             </div>
         </section>
@@ -4392,8 +4327,8 @@ Stock images from https://freepik.com-->
             </div>
             <div class="footer-col">
                 <h3 class="f-headings">About Us</h3>
-                <a href="#values">Our Values</a>
-                <a href="#about">Our Mission</a>
+                <a href="index.html#values">Our Values</a>
+                <a href="index.html#about">Our Mission</a>
             </div>
             <div class="footer-col">
                 <h3 class="f-headings">Follow Us</h3>
@@ -4417,6 +4352,5 @@ Stock images from https://freepik.com-->
         </div>
         <p>copyright Executive Moving Carriers ©</p>
     </footer>
-    
 </body>
 </html>
