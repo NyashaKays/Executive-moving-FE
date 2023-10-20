@@ -552,6 +552,56 @@ p{
     color: #b10000;
 }
 
+/*Steps section*/
+.steps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url(/Assets/images/trucks_buses.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #918f8f;
+}
+
+.steps .content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px 50px;
+    gap: 35px;
+    flex-direction: column;
+    background-color: #fff;
+    width: clamp(50em, 40%, 60em);
+    height: 30em;
+}
+
+.container ul{
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.container ul p a{
+    text-decoration: none;
+    color: #b10000;
+}
+
+.container ul p span{
+    font-weight: 600;
+}
 
 
 
