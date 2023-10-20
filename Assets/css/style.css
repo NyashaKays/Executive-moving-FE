@@ -106,6 +106,10 @@ nav ul a{
 nav ul a:hover{
     border-bottom: 2px #ffffff solid;
 }
+header.active nav ul a:hover{
+
+    border-bottom: 2px solid #000;
+}
 
 .mobile-nav{
     display: none;
@@ -246,11 +250,12 @@ h3{
 }
 p{
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 /*Hero*/
 .Hero{
+    height: fit-content;
     background-image: url(/Assets/images/couple-getting-ready-move-with-their-daughter.jpg);
     background-position: center;
     background-size: cover;
@@ -311,6 +316,10 @@ p{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    gap: 25px;
+}
+#processes{
+    margin-top: 35px;
 }
 .about p{
     width: clamp(30ch, 90%, 80ch);
@@ -371,6 +380,100 @@ p{
     -webkit-text-fill-color: transparent;
     
 }
+/*Processes section*/
+.processes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+}
+
+.processes .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.planning{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(20em,45%, 50em);
+    gap: 15px;
+    padding: 15px;
+}
+.check p{
+    font-weight: 400;
+}
+
+.image{
+    font-size: 5.5em;
+}
+.image i{
+    background-image: linear-gradient(to bottom right, #000000, #686764);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all ease-in-out 0.6s;
+    cursor: pointer;
+}
+
+.check:hover .image i, 
+.check:hover .info h3{
+    background-image: linear-gradient(to bottom right, #b10000, #2b0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+/*Send Message*/
+.send-message{
+    height: 15em;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.img img{
+    width: 45em;
+}
+
+.send-message .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.send-message .content .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+    padding: 10px 20px;
+}
+
+
 
 /* Quotations page*/
 .quotations{
