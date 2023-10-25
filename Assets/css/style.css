@@ -70,8 +70,8 @@ transition: 0.05s ease-in-out;
 .btn:hover{
     color: #000;
     background-color: #fff;
-    box-shadow:  3px 3px 31px #8c8c8c,
-                -3px -3px 31px #ffffff;
+    box-shadow:  1px 1px 15px #8c8c8c,
+                -1px -1px 15px #ffffff;
 }
 
 header.active nav ul a{
@@ -89,14 +89,30 @@ header.active nav ul a{
     font-size: 1.5em;
     font-family: 'Lora', serif;
     font-weight: 700;
-    color: #000;
+    color: #fff;
 }
 .logo{
+    display: none;
+}
+header.active .white-logo{
+    display: none;
+}
+header.active .logo{
     width: 4rem;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.white-logo{
+    width: 4rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header.active .logo-container span{
+    color: #000;
 }
 
 nav ul{
@@ -121,6 +137,10 @@ nav ul a:hover{
 }
 header.active nav ul a:hover{
 
+    border-bottom: 2px solid #000;
+}
+header.active .link:hover,
+header.active .dropdown.active > .link{
     border-bottom: 2px solid #000;
 }
 
@@ -312,6 +332,10 @@ footer .items{
     font-size: 1.2em;
 }
 
+footer .copyright{
+    font-size: 0.8em;
+}
+
 
 /*main*/
 main{
@@ -446,8 +470,8 @@ p{
 }
 
 .card{
-    width: 20em;
-    height: 30em;
+    width: clamp(20em, 22.5%, 30em);
+    height: 25em;
     border-radius: 26px;
     background: #fff;
     box-shadow:  10px 10px 29px #000000,
@@ -628,7 +652,7 @@ p{
     justify-content: flex-end;
     flex-direction: column;
     text-align: right;
-    width: 70%;
+    width: 80%;
 }
 .testimony .details p{
     text-align: right;
@@ -1056,6 +1080,19 @@ input:-webkit-autofill:focus{
     }
     .logo-container span{
         display: none;
+    }
+
+    .steps{
+        height: fit-content;
+        padding: 50px 0px;
+    }
+
+    .testimony .details{
+        width: 100%;
+    }
+
+    .card{
+        height: 30em;
     }
 
 }
