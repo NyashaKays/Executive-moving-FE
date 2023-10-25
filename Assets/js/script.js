@@ -24,4 +24,34 @@ window.onload = function(){
     menu_btn.addEventListener("click", function(){
         menu.classList.toggle('active')
     })
+
+    document.addEventListener("click", e => {
+        const isDropdownButton = e.target.matches("[data-dropdown-button]")
+        if(!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
+
+        let currentDropdown
+        if (isDropdownButton){
+            currentDropdown = e.target.closest('[data-dropdown]')
+            currentDropdown.classList.toggle('active')
+        }
+
+        document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+            if(dropdown === currentDropdown) return
+
+            dropdown.classList.remove('active')
+        })
+    })
+/*
+    const dropdown = document.querySelector('.dropdown-menu');
+    const trigger = document.querySelector('.trigger');
+    const trigger2 = document.querySelector('.trigger-2');
+    const drop2 = document.getElementById('drop2');
+
+    trigger.addEventListener("click", function(){
+        dropdown.classList.toggle('active');
+    })
+    trigger2.addEventListener("click", function(){
+        drop2.classList.toggle('active');
+    })
+*/
 }
