@@ -41,17 +41,4 @@ window.onload = function(){
             dropdown.classList.remove('active')
         })
     })
-/*
-    const dropdown = document.querySelector('.dropdown-menu');
-    const trigger = document.querySelector('.trigger');
-    const trigger2 = document.querySelector('.trigger-2');
-    const drop2 = document.getElementById('drop2');
-
-    trigger.addEventListener("click", function(){
-        dropdown.classList.toggle('active');
-    })
-    trigger2.addEventListener("click", function(){
-        drop2.classList.toggle('active');
-    })
-*/
 }
