@@ -894,7 +894,192 @@ input:-webkit-autofill:focus{
     width: 100%;
 }
 
+/*careers page*/
+.careers-hero{
+    height: fit-content;
+    padding: 100px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-image: url(/Assets/images/xindexpage3.jpeg.pagespeed.ic.qo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #353535;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+.call-to-action{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.call-to-action a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 0px;
+}
+.call-to-action a:hover{
+    color: #b10000;
+}
 
+.careers-message{
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50em;
+    padding: 25px;
+    gap: 10px;
+}
+.imagery-container{
+    position: relative;
+    height: 100%;
+    width: clamp(30em, 58.25%, 70em);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.imagery{
+    width: 100%;
+}
+.blur{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #2b000059;
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.winning{
+    height: fit-content;
+    padding: 100px 20px;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #faf1f1;
+}
+.winning h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+}
+.winning h2 span{
+    border-bottom: 3px solid #b10000;
+    width: 5em;
+}
+.item-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+.item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 20em;
+    text-align: left;
+}
+
+
+.opportunities{
+    height: fit-content;
+    padding: 100px 25px;
+    background-image: url(/Assets/images/GoogleDrive_work-environment.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #575656;
+    color: #fff;
+    flex-direction: column;
+    gap: 50px;
+}
+.opportunities .btn{
+    padding: 20px 50px;
+}
+.opportunity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.candidate{
+    width: 50em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.positions{
+    width: clamp(30em, 58.25%, 70em);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.position{
+    background: rgba( 0, 8, 21, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 50px;
+    gap: 15px;
+    width: 40em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.position .roles{
+    padding: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.role{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+    color: #b8b5b5;
+    padding: 15px 5px;
+    border-bottom: 1px solid #fff;
+}
+.role:hover{
+    background-color: #a3a3a310;
+}
+.expiry{
+    font-size: 0.9em;
+}
 
 
 
@@ -1109,6 +1294,10 @@ input:-webkit-autofill:focus{
 
     .card{
         height: 30em;
+    }
+    .dropdown-menu ul li{
+        padding: 10px 5px;
+        width: 100%;
     }
 
 }
