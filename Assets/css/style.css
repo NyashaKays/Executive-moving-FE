@@ -971,6 +971,9 @@ input:-webkit-autofill:focus{
     -webkit-backdrop-filter: blur( 4px );
 }
 
+
+
+
 .winning{
     height: fit-content;
     padding: 100px 20px;
@@ -1017,6 +1020,9 @@ input:-webkit-autofill:focus{
     color: #fff;
     flex-direction: column;
     gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .opportunities .btn{
     padding: 20px 50px;
@@ -1026,18 +1032,21 @@ input:-webkit-autofill:focus{
     align-items: center;
     justify-content: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
 .candidate{
-    width: 50em;
+    width: clamp(30em, 50%, 55em);
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    gap: 15px;
 }
 .positions{
-    width: clamp(30em, 58.25%, 70em);
+    height: 100%;
+    width: clamp(30em, 50%, 70em);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -1050,7 +1059,7 @@ input:-webkit-autofill:focus{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 50px;
     gap: 15px;
-    width: 40em;
+    width: clamp(25em, 90%, 55em);
     display: flex;
     align-items: flex-start;
     justify-content: center;
