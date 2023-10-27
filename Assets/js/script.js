@@ -1,6 +1,7 @@
 window.onload = function(){
     window.addEventListener('scroll', function(e) {
         var height = this.document.getElementById('Hero').offsetHeight
+        height = height - 20;
         if(this.scrollY > height){
             this.document.getElementById('header').classList.add('active')
             this.document.getElementById('to-top').classList.add('active')
