@@ -41,4 +41,11 @@ window.onload = function(){
             dropdown.classList.remove('active')
         })
     })
+
+    const trigger = document.getElementById('role');
+    const desc = document.getElementById('job-desc');
+
+    trigger.addEventListener("click", function(){
+        desc.classList.toggle('active')
+    })
 }
