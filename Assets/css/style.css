@@ -394,7 +394,6 @@ p{
 .Hero .contents{
     width: 100%;
     background: rgba( 0, 8, 21, 0.05 );
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
@@ -1229,9 +1228,147 @@ input:-webkit-autofill:focus{
     transition: 0.05s ease-in-out;
     }
 
+/*long distance movers*/
+.services-hero{
+    height: fit-content;
+}
+.services-hero .content{
+    height: 100%;
+    width: 100%;
+    padding: 100px 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #fff;
+    background: rgba(0, 5, 14, 0.267);
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+}
+.services-hero.long-distance{
+    background-image: url(/Assets/images/long_distance_02.png);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #888686;
+}
+.btn.hero-btn{
+    border: 2px solid #000;
+    background-color: transparent;
+    color: #000;
+}
+.btn.hero-btn:hover{
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.experts{
+    height: fit-content;
+    padding: 100px 0px;
+    background-image: url(/Assets/images/moving\ guy.png);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #ffffff;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.experts .container{
+    width: clamp(45em, 60%, 90em);
+    padding: 50px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #000000;
+    color: #fff;
+    gap: 10px;
+}
+.info-cards{
+    width: 100%;
+    padding: 15px 5px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info-card{
+    width: clamp(20em, 45%, 50em);
+}
+.info-card p{
+    font-weight: 100;
+}
 
 
+.moving-details{
+    height: fit-content;
+    padding: 100px 0px;
+}
+.moving-details .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.detail-boxes .heading{
+    padding: 15px 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+}
+.detail-boxes .heading span{
+    width: 100px;
+    border-bottom: 3px solid #b10000;
+}
+.detail-boxes{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    width: clamp(45em, 45%, 70em);
+    height: 42em;
+    padding: 50px 20px;
+    background-color: #fcfcfc;
+}
+.detail-boxes ul{
+    line-height: 50px;
+}
+.detail-boxes ul li span{
+    font-weight: 700;
+}
+.detail-boxes p span{
+    color: #b10000;
+}
+.detail-boxes p span:hover{
+    text-decoration: underline;
+}
 
+.call-to-act{
+    height: fit-content;
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    color: #fff;
+    background-color: #000;
+}
+.call-to-act .btn.hero-btn{
+    padding: 15px 30px;
+    color: #fff;
+    border: 2px solid #fff;
+}
 
 
 
