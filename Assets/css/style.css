@@ -87,8 +87,7 @@ header.active nav ul a{
 .logo-container span{
     text-decoration: none;
     font-size: 1.5em;
-    font-family: 'Lora', serif;
-    font-weight: 700;
+    font-weight: 900;
     color: #fff;
 }
 .logo{
@@ -1255,10 +1254,22 @@ input:-webkit-autofill:focus{
     background-blend-mode: multiply;
     background-color: #888686;
 }
+.services-hero.storage{
+    background-image: url(/Assets/images/AdobeStock_181658575-scaled.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #ccc7c7;
+}
 .btn.hero-btn{
     border: 2px solid #000;
     background-color: transparent;
     color: #000;
+}
+.btn.shero-btn{
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
 }
 .btn.hero-btn:hover{
     border: 2px solid #fff;
@@ -1341,7 +1352,7 @@ input:-webkit-autofill:focus{
     background-color: #fcfcfc;
 }
 .detail-boxes ul{
-    line-height: 50px;
+    line-height: 40px;
 }
 .detail-boxes ul li span{
     font-weight: 700;
@@ -1369,6 +1380,70 @@ input:-webkit-autofill:focus{
     color: #fff;
     border: 2px solid #fff;
 }
+
+.types{
+    height: fit-content;
+    padding: 150px 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.type-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+    gap: 15px;
+}
+.type{
+    width: clamp(20em, 23%, 35em);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 35px 15px;
+    height: 18em;
+}
+.type p{
+    font-weight: 300;
+}
+.type:nth-child(2),
+.type:nth-child(4)
+{
+    background-color: #fcfcfc;
+}
+.storage-info{
+    height: fit-content;
+    padding: 150px 25px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.storage-info .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 50px;
+    width: 100%;
+}
+.storage-info .content p{
+    width: clamp(30ch, 90%, 100ch);
+}
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+}
+.information .imagery{
+    width: 40em;
+}
+
+
 
 
 
@@ -1411,7 +1486,12 @@ input:-webkit-autofill:focus{
     header nav{
         display: none;
     }
-
+    .storage-info{
+        padding: 150px 5px;
+    }
+    .storage-info .content{
+        padding: 0px;
+    }
     .current-openings{
         padding: 15px;
     }
