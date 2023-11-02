@@ -701,6 +701,9 @@ p{
     background-color: #918f8f;
     height: fit-content;
 }
+#storage{
+    background-image: url(/Assets/images/storage-locker-tips.jpg);
+}
 
 .steps .content{
     display: flex;
@@ -722,7 +725,7 @@ p{
 }
 #right-for-me{
     gap: 10px;
-    padding: 50px 30px;
+    padding: 50px;
 }
 
 .container ul{
