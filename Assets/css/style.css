@@ -375,6 +375,10 @@ h2{
 h3{
     font-size: 1.5em;
 }
+h4{
+    font-size: 1.2em;
+    font-weight: 900;
+}
 p{
     font-size: 1.2em;
     font-weight: 400;
@@ -687,7 +691,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px;
+    padding: 100px 0px;
     flex-wrap: wrap;
     width: 100%;
     background-image: url(/Assets/images/trucks_buses.jpg.jpg);
@@ -695,7 +699,7 @@ p{
     background-size: cover;
     background-blend-mode: multiply;
     background-color: #918f8f;
-    padding-bottom: 50px;
+    height: fit-content;
 }
 
 .steps .content{
@@ -709,12 +713,16 @@ p{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 50px 50px;
+    padding: 50px;
     gap: 35px;
     flex-direction: column;
     background-color: #fff;
     width: clamp(50em, 40%, 60em);
     height: clamp(30em, 70%, 50em);
+}
+#right-for-me{
+    gap: 10px;
+    padding: 50px 30px;
 }
 
 .container ul{
@@ -1262,11 +1270,6 @@ input:-webkit-autofill:focus{
     background-color: #ccc7c7;
 }
 .btn.hero-btn{
-    border: 2px solid #000;
-    background-color: transparent;
-    color: #000;
-}
-.btn.shero-btn{
     border: 2px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
@@ -1327,6 +1330,7 @@ input:-webkit-autofill:focus{
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 150px 5px;
 }
 .detail-boxes .heading{
     padding: 15px 0px;
@@ -1347,9 +1351,12 @@ input:-webkit-autofill:focus{
     flex-direction: column;
     gap: 20px;
     width: clamp(45em, 45%, 70em);
-    height: 42em;
-    padding: 50px 20px;
+    height: 45em;
+    padding: 50px 10px;
     background-color: #fcfcfc;
+}
+#box{
+    height: fit-content;
 }
 .detail-boxes ul{
     line-height: 40px;
@@ -1366,7 +1373,7 @@ input:-webkit-autofill:focus{
 
 .call-to-act{
     height: fit-content;
-    padding: 100px 50px;
+    padding: 100px 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1415,19 +1422,27 @@ input:-webkit-autofill:focus{
 }
 .storage-info{
     height: fit-content;
-    padding: 150px 25px;
+    padding: 50px 0px;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
+
 }
 .storage-info .content{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 10px 50px;
     width: 100%;
+}
+.storage-info .content .intro{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
 }
 .storage-info .content p{
     width: clamp(30ch, 90%, 100ch);
@@ -1440,7 +1455,7 @@ input:-webkit-autofill:focus{
     flex-wrap: wrap;
 }
 .information .imagery{
-    width: 40em;
+    width: 25em;
 }
 
 
@@ -1474,6 +1489,16 @@ input:-webkit-autofill:focus{
 }
 
 /*mobile devices*/
+@media(max-width: 541px){
+    .experts .container{
+        width: clamp(26em, 100%, 45em);
+    }
+    .detail-boxes{
+        justify-content: center;
+        height: fit-content;
+        width: clamp(27em, 45%, 70em)
+    }
+}
 @media(max-width: 820px){
     html, body{
         width: 100%;
@@ -1537,6 +1562,9 @@ input:-webkit-autofill:focus{
     /*
     * Just a quick hamburger
     */
+    header.active #menuToggle span{
+        background-color: #000;
+    } 
     #menuToggle span
     {
         display: block;
@@ -1545,7 +1573,7 @@ input:-webkit-autofill:focus{
         margin-bottom: 5px;
         position: relative;
 
-        background: #2c2c2c;
+        background: #ffffff;
         border-radius: 3px;
 
         z-index: 9998;
@@ -1571,6 +1599,7 @@ input:-webkit-autofill:focus{
     * Transform all the slices of hamburger
     * into a crossmark.
     */
+
     #menuToggle input:checked ~ span
     {
         opacity: 1;
