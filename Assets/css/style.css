@@ -1370,6 +1370,11 @@ input:-webkit-autofill:focus{
 .detail-boxes p span{
     color: #b10000;
 }
+.detail-boxes p span a{
+    text-decoration: none;
+    color: #b10000;
+}
+.detail-boxes p span a:hover,
 .detail-boxes p span:hover{
     text-decoration: underline;
 }
